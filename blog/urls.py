@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
+from .feeds import LatestPostsFeed
 from .views import (PostListView,
                     
                     PostCreateView,
@@ -16,6 +17,7 @@ urlpatterns = [
     path('post/new/', PostCreateView.as_view(), name='post-create'),
     path('post/<int:pk>/update/', PostUpdateView.as_view(), name='post-update'), #learn
     path('post/<int:pk>/delete/', PostDeleteView.as_view(), name='post-delete'), #learn
-    path('about/',views.about, name='blog-about')
+    path('about/',views.about, name='blog-about'),
+    path('blog/feed/', LatestPostsFeed(), name='post_feed')
     
 ]
