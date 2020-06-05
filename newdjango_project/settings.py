@@ -24,7 +24,7 @@ SECRET_KEY = 't9lgv=-@w*582^z*4**nhddlw9z#1eqm0jb0w#s2j&f_va^w*p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [myblogappdjango.herokuapp.com]
+ALLOWED_HOSTS = ['myblogappdjango.herokuapp.com']
 
 
 # Application definition
